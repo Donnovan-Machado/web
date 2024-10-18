@@ -1,0 +1,93 @@
+Sobre web resposta
+1)O que é Internet e WEB? São as mesmas coisas? Explique de forma clara e evidencie as diferenças.
+Internet é uma rede global de computadores interconectados que se comunicam entre si através de protocolos (modelo osi).
+Web (ou World Wide Web) é um serviço que opera sobre a Internet. É um sistema de documentos interligados que podem ser acessados via navegadores por meio do protocolo HTTP.
+
+2)O que é arquitetura cliente-servidor utilizada na web ? Explique o carregamento de uma página passo a passo.
+A arquitetura cliente-servidor é um modelo de computação onde o cliente (usuário) solicita serviços ou recursos e o servidor (computador que hospeda os dados) fornece esses serviços ou recursos.
+Requisição do Cliente: O usuário digita uma URL no navegador.
+Resolução de Nome: O navegador consulta um servidor DNS para traduzir o nome da URL em um endereço IP.
+Conexão com o Servidor: O navegador se conecta ao servidor correspondente ao IP obtido.
+Solicitação do Documento: O navegador envia uma solicitação HTTP para o servidor (ex.: GET /index.html).
+Resposta do Servidor: O servidor processa a solicitação e envia de volta o documento HTML solicitado.
+Renderização do Documento: O navegador recebe o HTML e o renderiza na tela.
+Requisição de Recursos Adicionais: Se houver imagens, CSS ou scripts, o navegador faz requisições adicionais ao servidor para esses recursos.
+Exibição Completa: O navegador apresenta a página totalmente carregada para o usuário.
+
+3)O que é um tag HTML?
+Uma tag HTML é um elemento básico que define a estrutura e o conteúdo de uma página web. Por exemplo, <p>, <a>, <header> etc.
+
+4)O que é HTML e qual a estrutura básica de um documento HTML?
+O HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Um exemplo de uma pagina basica:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Título da Página</title>
+</head>
+<body>
+<h1>Meu Cabeçalho</h1>
+<p>LoremIpsu.</p>
+</body>
+</html>
+
+5)Discuta com colega o que são tags semânticas do HTML,
+Explique como é criado um link no html sobre um parágrafo.
+o link é criado a partir da tag <a>, que significa anchor. entao é só colocar um <a>, dentro de um <p>
+<p>Para mais informações,<a href="https://www.exemplo.com">clique aqui</a>.</p>
+
+6) Implemente as seguintes listas em HTML
+1 ordenada por a,b,c,d com titulo da coluna
+
+<h1>Lista Ordenada por Letras</h1>
+<ol type="a">
+<li>Nome</li>
+<li>Telefone</li>
+<li>Endereço</li>
+</ol>
+
+2 ordenada por numeros Romanos
+
+<h2>Lista Ordenada por Números Romanos</h2>
+<ol type="I">
+<li>Nome</li>
+<li>Telefone</li>
+<li>Endereço</li>
+</ol>
+
+
+3 lista na ordenada
+
+<h3>Lista Não Ordenada</h3>
+<ol>
+<li>Nome</li>
+<li>Telefone</li>
+<li>Endereço</li>
+</ol>
+
+
+7)Crie uma página biográfica que inclui um cabeçalho com seu nome, uma breve descrição em um parágrafo, e uma lista de hobbies ou interesses.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Biografia</title>
+</head>
+<body>
+<header>
+<h1>Donnovan</h1>
+</header>
+<p>Curto bastante programar e jogar.</p>
+
+<h2>Hobbies e Interesses</h2>
+<ul>
+<li>Programação</li>
+<li>Jogos</li>
+<li>Academia</li>
+<li>Ler Quadrinhos</li>
+</ul>
+</body>
+</html>
