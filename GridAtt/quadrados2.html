@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quadrados2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #main-container {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            background-color: lightyellow;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+        #main-container > div {
+            background-color: rgb(60, 60, 60);
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #d > div {
+            background-color: rgb(200, 200, 200);
+            font-size: 40px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #section-a {
+            grid-column: span 2;
+        }
+        #section-b {
+            grid-column: 4;
+        }
+        #d {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="section-a">A</div>
+        <div id="section-b">B</div>
+        <div id="section-c">C</div>
+        <div id="d">
+            <div id="section-e">E</div>
+            <div id="section-f">F</div>
+            <div id="section-g">G</div>
+            <div id="section-m">M</div>
+            <div id="section-i">I</div>
+            <div id="section-j">J</div>
+        </div>
+    </div>
+</body>
+</html>

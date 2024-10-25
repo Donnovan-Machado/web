@@ -1,0 +1,44 @@
+Níveis 1 e 2)
+Utilizando a propriedade grid-column-start: [integer], é possível determinar em qual coluna vertical da grade um elemento será colocado.
+
+Nível 3)
+Com a propriedade grid-column-end: [integer], é possível especificar em que coluna vertical o elemento termina.
+
+Níveis 4-6)
+Ao aplicar valores negativos na propriedade anterior, o elemento pode ser configurado para finalizar em uma coluna anterior à sua posição inicial.
+
+Níveis 7-9)
+Por meio das propriedades grid-column-start/end: span [integer], é possível definir a largura do elemento, ao invés de apenas sua posição final na grade.
+
+Níveis 10 e 11)
+A propriedade grid-column permite especificar tanto o início quanto o fim da coluna, sendo possível usar o formato span. Por exemplo: grid-column: 2 / 4;.
+
+Níveis 12-15)
+A propriedade grid-row funciona da mesma forma que grid-column, porém se aplica a fileiras em vez de colunas.
+
+Níveis 16 e 17)
+A propriedade grid-area combina as funcionalidades de grid-row e grid-column. Por exemplo, grid-area: 1 / 1 / 3 / 6; refere-se a [linha inicial] [coluna inicial] [linha final] [coluna final].
+
+Níveis 18 e 19)
+Por padrão, os elementos em uma grade que não têm uma posição definida com as propriedades mencionadas são organizados automaticamente de acordo com a ordem no código. Essa ordem padrão, que é 0, pode ser alterada com a propriedade order.
+
+Nível 20)
+Usando a propriedade grid-template-columns, é possível modificar a distribuição e a quantidade de colunas na grade.
+
+Nível 21)
+A propriedade repeat permite simplificar a configuração das colunas ou fileiras no grid-template. Por exemplo: grid-template-columns: repeat(5, 20%);.
+
+Nível 22)
+Além de porcentagens, o grid-template também pode ser definido em pixels.
+
+Níveis 23-26)
+Com a propriedade fr em grid-template, é possível dividir o espaço disponível das colunas e fileiras em frações. Exemplo: grid-template-columns: 1fr 5fr;.
+
+Nível 26)
+As propriedades fr e px podem ser combinadas. Por exemplo: grid-template-rows: repeat(4, 12.5px) 1fr, que cria quatro fileiras de 12.5 pixels de altura, seguidas por uma quinta que ocupa o espaço restante.
+
+Nível 27)
+A propriedade grid-template combina as definições de grid-template-rows e grid-template-columns. Exemplo: grid-template: 50% 50% / 200px;.
+
+Nível 28)
+A configuração grid-template: 1fr 50px / 1fr 4fr; cria duas linhas, onde a segunda possui 50px de altura e a primeira ocupa o espaço restante, e duas colunas, sendo a primeira equivalente a 1 parte do espaço e a segunda a 4 partes.
