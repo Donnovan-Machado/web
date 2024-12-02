@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string, número, booleano, array, objeto
+        var texto = "Ola Mundo" //variavel global
+        let numero = 10         //escopo local
+        const verdadeiro = true        //constante que não pode ser mudada
+
+        let vetor = [5, 1, 2, 3, 10]
+        let pessoa={
+            nome:"Adulto",
+            idade:18,
+            adulto:true
+        }
+
+
+        //imprimir tudo no console:
+        console.log("Texto: "+texto)
+        console.log(`Número: ${numero}`)
+        console.log(verdadeiro)
+        console.log(vetor)
+        console.log(pessoa)
+
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+        console.log(pessoa.adulto)
+
+        function tipo(let){
+            let = let.typeof
+            return let;
+        }
+
+
+    </script>
+    
+</body>
+</html>

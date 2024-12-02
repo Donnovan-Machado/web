@@ -1,0 +1,1 @@
+2)a) Por conta da ordem de declaração. O script está tentando acessar uma parte do código HTML não processado
