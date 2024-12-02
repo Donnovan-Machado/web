@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <style>
+        body {
+            display: flex;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .divisao {
+            height: 1px;
+            background-color: #000000;
+            margin: 10px 0;
+        }
+        .lateral {
+            width: 200px;
+            padding: 20px;
+            background-color: #969291;
+        }
+        .principal {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+        }
+        .chat {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+        .titulo {
+            background-color: #636363;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .mensagens-reais {
+            padding: 10px;
+            font-size: 15px;
+        }
+        .botao {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .pizza-item {
+            display: flex;
+            align-items: center; 
+            margin: 10px 0;
+        }
+        .pizza-item h3 {
+            margin-left: 10px; 
+        }
+        @media (max-width: 767px) {
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+        }
+    </style>
+</head>
+<body>
+    <div class="lateral">
+        <img src="../imgs/gato.jpeg" alt="Gato">
+        <header><h1>Chef Pro</h1></header>
+        <br>
+        <h3>Localização</h3>
+        <h3>Sabores</h3>
+        <h3>Contato</h3>
+        <h3>Parceiros</h3>
+        <div class="divisao"></div>
+    </div>
+    <div class="principal">
+        <h1>Top 10 pizzas - Melhores Sabores</h1>
+        <div class="divisao"></div>
+
+        <div class="pizza-item">
+            <img src="./pizza.jfif" alt="Pizza Saborosa">
+            <h3>Pizza Sabor Saboroso</h3>
+        </div>
+
+        <div class="divisao"></div>
+
+        <div class="pizza-item">
+            <img src="./pizza.jfif" alt="Pizza Saborosa 2">
+            <h3>Pizza Sabor Saboroso 2</h3>
+        </div>
+
+        <div class="divisao"></div>
+
+        <div class="pizza-item">
+            <img src="./pizza.jfif" alt="Pizza Saborosa 3">
+            <h3>Pizza Sabor Saboroso 3</h3>
+        </div>
+
+        <div class="divisao"></div>
+
+        <div class="chat">
+            <div class="titulo">Chat</div>
+            <div class="mensagens-reais">
+                <p>Tá com fome? Pede pizza</p>
+            </div>
+            <div class="botao">
+                <input type="text" placeholder="Muita fome...">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html
+
+

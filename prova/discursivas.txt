@@ -1,0 +1,50 @@
+1. 
+Primeiramente o usuario vai digitar uma url no seu navegador para pesquisar algo. O Navegador vai consultar um servidor DNS para traduzir o nome da url em um endereço IP.
+Após isso, o navegador vai tentar achar o servidor correspondente ao IP que ele obteve. Caso tenha achado, ele vai enviar uma solicitação HTTP para o servidor.
+O servidor vai processar a solicitação e vai enviar de volta o documento solicitado. O navegador recebe o documento, processa e renderiza na tela.
+Se caso houver conteudos adicionais por exemplo imagens, CSS ou scripts, o navegador faz requisições adicionais ao servidor para esses recursos. E no fim, o navegador
+apresenta a pagina totalmente carregadapara a pessoa.
+
+
+
+2.Não, html é uma linguagem marcação. Javascript é de programação e CSS é de estilo. Em uma analogia, o html é nosso esqueleto, o css nossa pele e cabelos, tudo ligado a aparencia e o Javascript é nosso musculo e nervos.
+3.Sobre CSS responda.
+a)Quais são as formas de incluir css em um documento HTML cite as três e explique que impacto isso tem no processamento das regras.
+R: A primeira forma é o css incline, por exemplo:
+<div style="background-color: blue"><\div>
+Segunda forma é importar por um arquivo css no head. Exemplo:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+Terceira forma é colocar a tag style no head. Ficando assim:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <-- Estilos aqui -->
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+b)Como funcionam seletores CSS explique se necessário com exemplos.
+R: Os seletores server para dizer qual elemento do html vai receber determinado estilo por exemplo
+p{ font-size: 15px; }, isso fala que todos os elementos p (paragrafos) terão a fonte do tamanho de 15px. Se tem varios tipos de seletores, por exemplo
+para id ( #exemplo ), classe ( .exemplo ) entre outros.
+c)Como funcionam o posicionamento de elementos no HTML e CSS, descreva e explique se necessário com exemplos.
+R: Tem muitos tipos posicionamentos do css dentre todos irei citar alguns. 
+Temos o static,  que é a posição padrão. Eles irão seguir o fluxo natural da pagina ou seja, um embaixo do outro.
+Tem o relative, ele vai ser posicionado em relação a sua posição original.
+E o sticky, que vai ficar fixado ao rolar a pagina. Tipo aqueles spans que seguem você quando você rola para baixo e para cima.

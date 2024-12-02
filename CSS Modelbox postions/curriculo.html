@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <style>
+        body{
+            display:flex;
+        }
+        img {
+        width: 200px; 
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover; 
+        }
+        .divisao {
+        height: 1px;
+        right:0;
+        background-color: #000000;
+        margin: 10px 0;
+        }
+        .lateral{
+        width: 200px;
+        padding: 20px; 
+        background-color: #969291;
+        }
+        .informacoes > :nth-child(odd){
+            background-color: rgb(63, 82, 245);
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+        .informacoes > :nth-child(even){
+            color: rgb(255, 255, 255); 
+        }
+        .principal{
+        flex: 1;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lateral">
+        <img src="../imgs/gato.jpeg">
+        <header><h1>Pessoal</h1></header>
+        <div class="divisao"></div>
+        <div class="informacoes">
+        <p>Nome</p>
+        <p>Donnovan Machado</p>
+        <p>Endereço</p>
+        <p>Blumenau, SC</p>
+        <p>Telefone</p>
+        <p>Lorem, ipsum.</p>
+        <p>Email</p>
+        <p>Lorem, ipsum dolor.</p>
+        </div>
+        </div>
+    <div class="principal">
+        <h1>Donnovan Machado</h1>
+        <div class="divisao"></div>
+        <p>Estudante de curso técnico integrado em informática no IFSC campus gaspar.</p>
+        <h2> Experiência profissional</h2>
+        <div class="divisao"></div>
+        <h3> Sim</h3>
+        <ul>
+            <li>Exemplo 1</li>
+            <li>Exemplo 2</li>
+            <li>Exemplo 3</li>
+        </ul>
+        <h3> Sim</h3>
+        <ul>
+            <li>Exemplo 1</li>
+            <li>Exemplo 2</li>
+            <li>Exemplo 3</li>
+        </ul>
+    </div>
+</body>
+</html>
